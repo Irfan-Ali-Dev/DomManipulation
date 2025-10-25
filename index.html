@@ -74,16 +74,42 @@
     <p class="highlight">2nd element</p>
     <p class="highlight">3rd element</p>
     <p class="highlight">4th element</p>
-    <p class="highlight">5th element</p>
+    <p class="highlight">5th element</p> <hr />
 
     <label for="">Solution # 15</label> <br />
-    <input type="checkbox" name="" id="">
+    <label for="agree">Agreed</label>
+    <input onclick="checkAgreement()" type="checkbox" name="agree" id="agree"> <br />
+    <p id="display">Not Agreed</p> <hr />
     
     <label for="">Solution # 16</label> <br />
+    <label for="options">Chose a Fruit</label>
+    <select name="options" id="options" onclick="showFruit()">
+        <option value="NA">NA</option>
+        <option value="Apple">Apple</option>
+        <option value="Orange">Orange</option>
+        <option value="Banana">Banana</option>
+        <option value="Mango">Mango</option>
+    </select> <br />
+    <span id="selectedValue">Select Please</span><hr />
+
     <label for="">Solution # 17</label> <br />
+    <p id="dateTime">To See Current Date & Time </p>
+    <button onclick="displayTime()">Click Here</button> <hr />
+
     <label for="">Solution # 18</label> <br />
+    <p id="togglePara">This is a paragraph to hide. To unhide Para kindly remove code from javascript</p> <hr />
+    
     <label for="">Solution # 19</label> <br />
+    <label for="age">Age</label>
+    <input type="number" name="age" id="age">
+    <button onclick="checkResult()">Check Eligibility</button><br/>
+    <span>You are </span>
+    <span id="showResult">?</span> <hr />
+
     <label for="">Solution # 20</label> <br />
+    <label for="searchBox">Search Box</label>
+    <input type="search" name="searchBox" id="searchBox">
+    <button id="clearBtn" onclick="clear()">Clear</button>
 
     <script src="./app.js"></script>
 </body>

@@ -80,9 +80,47 @@ const txtColor = document.querySelectorAll(".highlight");
 txtColor.forEach(elmts => elmts.style.color = "orange");
     
 // Solution # 15
-
+const chkbox = document.querySelector("#agree")
+const display = document.querySelector("#display")
+function checkAgreement () {
+    if (chkbox.checked) {
+        display.innerHTML = "Agreed"
+    }else {
+        display.innerHTML = "Not Agreed"
+    }
+}
 // Solution # 16
+const fruit = document.querySelector ("#options")
+const seldFruit = document.querySelector ("#selectedValue")
+function showFruit () {
+    seldFruit.innerHTML = "Your Selected Fruit is " + fruit.value;
+}
 // Solution # 17
+const dateTime = document.querySelector("#dateTime")
+function displayTime (){
+    const now = new Date();
+    dateTime.innerHTML = now.toLocaleString()  
+}
 // Solution # 18
+const hide = document.querySelector("#togglePara");
+    hide.style.display = "none";
+
 // Solution # 19
+function checkResult() {
+    const ageInput = document.querySelector("#age")
+    const showResult = document.querySelector("#showResult")
+        const age = Number(ageInput.value)
+    if (age >= 18 && age <= 60) {
+        console.log("Eligible");
+        showResult.innerHTML = "Eligible"
+        }else {console.log("Not Eligible");
+        showResult.innerHTML = "Not Eligible"
+    }
+}
+
 // Solution # 20
+const searchBox = document.querySelector("#searchBox")
+const clearBtn = document.querySelector("#clearBtn");
+    function clear() {
+        searchBox.value = "";
+        }
